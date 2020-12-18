@@ -2,12 +2,14 @@
 Group project ID: 2282.
 Username: 404_Username_Not_Found
 
-
+**
+**
 Online shop Simulation
 
 With shopping cart and credit card validation using JavaScript, (CSS and HTML for the layout and design component)
 
-
+**
+**
 **About**
 This is a project for the course “Introduction to programming” of the university of St Gallen.
 
