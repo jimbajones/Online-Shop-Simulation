@@ -1,9 +1,8 @@
-# Project-shopping-cart
+# Online-Shop-Simulation
 - Group project ID: 2282 
 - Username: 404_Username_Not_Found
 <p></p>
 <p></p>
-<h3>Online Shop Simulation</h3>
 <p></p>
 <h3>With shopping cart and credit card validation using JavaScript, (CSS and HTML for the layout and design component)</h3>
 <p></p>
@@ -35,7 +34,7 @@ Given the complexity of this project for a beginner, templates, samples and tuto
 **Instructions to run the code**
 
 1.	Download the files/folder (click on ‘code’ drop down menu and then download zip)
-2.	Open the downloaded folder (Project-shopping-cart)
+2.	Open the downloaded folder (Online-Shop-Simulation)
 3.	Double Click on the file index.HTML to open it in browser 
 4.	Navigate the online shop (Description/Walkthrough below)
 
