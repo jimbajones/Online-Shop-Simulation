@@ -19,16 +19,16 @@ Given the complexity of this project for a beginner, templates, samples and tuto
 	Downloading the main folder (with the files) as it runs on local storage in the web browser. 
 
 **Files**
-	Images (folder)
-	Payment-Confirmation.html
-	README.md
-	About.html
-	Cart.html
-	Index.html
-	Main.js
-	Payment.html
-	Style.css
-	Shopping cart project - jim jacobs.docx
+- Images (folder)
+-	Payment-Confirmation.html
+- README.md
+- About.html
+- Cart.html
+- Index.html
+- Main.js
+- Payment.html
+- Style.css
+- Shopping cart project - jim jacobs.docx
 
 **Instructions to run the code**
 
@@ -50,17 +50,17 @@ Here the name is unfortunately there only for the aesthetics (more on this in th
 Firstly, if dashes are inputted, (like this 4444-4444-4444-4444) they get removed from the string. If no value, letters alone or letters and numbers are entered, the prompt reads invalid. The number must be exactly 16 characters. The sum of all numbers must be greater than 16. At least two different numbers must be entered. The last digit cannot be an odd number. 
 
 Here are a few examples of invalid inputs:
-	1111111111111111
-	1111111111111110 
-	2323232323232323
-	34536748958739098
-	234627893787627f
+- 1111111111111111
+- 1111111111111110 
+- 2323232323232323
+- 34536748958739098
+- 234627893787627f
 
 And some valid ones:
 
-	2323232323232324
-	5463782746574836
-	4444444444444446
+- 2323232323232324
+- 5463782746574836
+- 4444444444444446
 
 
 If the number is invalid, a red text shows up notifying you of said error. Once a valid credit card number has been entered a green text shows up with the confirmation. once the green light has appeared, click on the “confirm payment” button, which takes you to the final order confirmation page. This last step is more so to have an as close to complete experience rather than a purely functional one (again more on this in the limitations). 
@@ -78,17 +78,17 @@ To simplify things, I also used a stripped-down checkout form, so obviously this
 
 Then there is the payment confirmation button, which in this case is only a link to the order confirmation. Again, here I tried multiple ways of disabling the button until a valid credit card number was entered. I managed to make some sort of disabling action work when text was not entered vs when text was entered but couldn’t figure out the validity part. Hence, I left this out of the code. 
 
-Finally, I tried to transfer the inputted name from the form onto the order confirmation page, but considering the input and destination were on two separate html pages, despite having researched solutions, I was unable to make it work.
+I also tried to transfer the inputted name from the form onto the order confirmation page, but considering the input and destination were on two separate html pages, despite having researched solutions, I was unable to make it work.
 
 Finally, I didn’t manage to implement a way to delete the cart items (and thus the number at the top of the page) on the click of payment confirmation. Instead, for aesthetic purposes I found a pseudo loophole (which works visually only) which was to remove the reference to the JavaScript file that codes the cart number from the html file in question. That way the number appears as 0 on that page. 
 
 
 
 **Sources**
-Item images: https://www.pokemonprice.com/Gallery/98247308-89bc-4ec3-8826-f9d55d1be471
-Icons: https://ionicons.com/
-Background/wallpaper: https://wallpapercave.com/pokemon-hd-wallpaper
-Fonts: https://fonts.google.com/specimen/Press+Start+2P?preview.text_type=custom&query=press&sidebar.open=true&selection.family=Press+Start+2P
-Tutorial : https://www.udemy.com/course/javascript-shopping-cart-tutorial/learn/lecture/17873220#overview
-Template : https://www.w3schools.com/howto/howto_css_checkout_form.asp
-Sample : https://github.com/lezixb/credit-card-validator/blob/master/credit-card_validation_js.html
+- Item images: https://www.pokemonprice.com/Gallery/98247308-89bc-4ec3-8826-f9d55d1be471
+- Icons: https://ionicons.com/
+- Background/wallpaper: https://wallpapercave.com/pokemon-hd-wallpaper
+- Fonts: https://fonts.google.com/specimen/Press+Start+2P?preview.text_type=custom&query=press&sidebar.open=true&selection.family=Press+Start+2P
+- Tutorial : https://www.udemy.com/course/javascript-shopping-cart-tutorial/learn/lecture/17873220#overview
+- Template : https://www.w3schools.com/howto/howto_css_checkout_form.asp
+- Sample : https://github.com/lezixb/credit-card-validator/blob/master/credit-card_validation_js.html
