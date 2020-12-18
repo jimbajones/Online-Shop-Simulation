@@ -16,7 +16,7 @@ The goal for this project was to create an online shop experience with a home pa
 Given the complexity of this project for a beginner, templates, samples and tutorials for the required coding were used as a framework, which were then modified, integrated and expanded upon to fit the needs of my specific code, ideas and project as a whole. (All sources are linked at the bottom)
 
 **Pre-requisites**
-	Downloading the main folder (with the files) as it runs on local storage in the web browser. 
+- Downloading the main folder (with the files) as it runs on local storage in the web browser. 
 
 **Files**
 - Images (folder)
