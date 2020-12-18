@@ -29,7 +29,7 @@ Given the complexity of this project for a beginner, templates, samples and tuto
 - Main.js
 - Payment.html
 - Style.css
-- Shopping cart project - jim jacobs.docx
+- Online shop simulation - jim jacobs.docx
 
 **Instructions to run the code**
 
