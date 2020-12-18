@@ -10,6 +10,7 @@
 <p></p>
 
 **About** 
+
 This is a project for the course “Introduction to programming” of the university of St Gallen.
 
 The goal for this project was to create an online shop experience with a home page for item selection, a shopping cart and a payment (Credit Card Verification) option. This project started as JavaScript only but quickly became an HTML and CSS one as well in order to customize the aesthetics and features. 
