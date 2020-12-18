@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>PCS Payment</title>
+</head>
+<!-- this section codes the header -->
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2>Pokemon Card Shop</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+            </ul>
+            <h8>Checkout</h8>
+        </nav>
+    </header>
+
+<!-- this section codes the main area with the credit card form and validator -->
+    <div class="container">
+        <h12>Enter Credit Card Details:</h12>
+        <div class="container-box">
+            <div class="col-75">
+              <div class="container-checkout">
+                    <form action="Payment-Confirmation.html">
+                    <div class="row">
+                        <div class="col-50">
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="Harold Dingo">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111 2222 3333 4444">
+                        </div>
+                    </div>
+                    </form>
+                
+<!-- this section codes the credit card validator  -->
+
+                    <button onclick="validateCC()"> Validate Credit Card </button>
+
+
+                    <script type='text/javascript'>
+		
+                        function validateCC(){
+                            var card_number, text;
+                
+                            // Get the value of the input field with id="ccnum" and remove dashes if there are any
+                            card_number = document.getElementById("ccnum").value;
+                            strip_card_number= card_number.replace(/-/g,'');
+                            
+                        
+                            // set conditions and check for the inputed credit card number
+
+                            // Check for no input --> not valid
+                            if(card_number.length==0){			  
+                                text ='<span style="color:red;">Credit Card Not Valid</span><br>';	
+                                document.getElementById('result').innerHTML=text;
+                                document.getElementById("ccnum").focus();	
+                                return ;
+                            }
+                             // Check for number of characters --> not valid if not 16
+                            if(strip_card_number.length > 16 || strip_card_number.length < 16){
+                                text ='<span style="color:red;">Credit Card Not Valid</span><br>';
+                                document.getElementById('result').innerHTML=text;			  
+                                document.getElementById("ccnum").focus();	
+                                return ;
+                            }
+                            
+                            var lastDigit = strip_card_number.toString().slice(-1);
+                        
+                        
+                            // Check for letter input --> not valid
+                            if(isNaN(strip_card_number)){
+                                text ='<span style="color:red;">Credit Card Not Valid</span><br>';		  
+                                document.getElementById('result').innerHTML=text;
+                                document.getElementById("ccnum").focus();	
+                                return ;
+                            }
+
+                           // loop through all characters in string for final three checks
+                            else{
+                                var	sum_digits=0;
+                                var non_repeat=true;
+                            
+                                for(i=0; i < strip_card_number.length; i++) {
+
+                                    sum_digits += parseInt(strip_card_number.charAt(i));
+                            
+                                    if(i > 1) {
+                                        if ((parseInt(strip_card_number.charAt(i)) > parseInt(strip_card_number.charAt(i-1))) || (parseInt(strip_card_number.charAt(i)) < parseInt(strip_card_number.charAt(i-1)))) {
+                                            non_repeat=false;
+                                        }
+                                    }
+                                }  
+                            }  
+                            // Check for odd number on last digit --> not valid
+                            if(!(lastDigit % 2 == '0')){
+                                text ='<span style="color:red;">Credit Card Not Valid</span><br>';
+                                document.getElementById('result').innerHTML=text;			  
+                                document.getElementById("ccnum").focus();
+                                return ;
+                            }
+                            
+                            // Check for only one value inputted --> not valid
+                            if(non_repeat){
+                                text ='<span style="color:red;">Credit Card Not Valid</span><br>';
+                                document.getElementById('result').innerHTML=text;			  
+                                document.getElementById("ccnum").focus();
+                                return;
+                            }
+
+                            // Check for sum --> less than 16 not valid
+                            if(sum_digits < 16){
+                                text ='<span style="color:red;">Credit Card Not Valid</span><br>';
+                                document.getElementById('result').innerHTML=text;			  
+                                document.getElementById("ccnum").focus();	
+                                return ;
+                            }
+                    
+                            
+                            // Run Below if all Validation checks Pass - Card valid
+                            text ='<span style="color:green; font-weight:bold;">Credit Card Valid</span><br>';
+                            document.getElementById('result').innerHTML=text;
+                        }
+
+                    </script>
+                    <div id="result" style="color:black; font-size:medium; margin:0; padding:0"></span>
+                </div>
+                
+                <!-- this section codes the payment button-->
+                <form action="Payment-Confirmation.html">
+                  <input type="submit" id="btnSubmit" value="Confirm Payment" class="btn">
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- this section codes the footer -->
+    <footer>
+        <div class="fixed-footer">
+            <h7>Copyright© 2020. Created by 404_Username_Unknown. Some Rights Reserved.</h7>
+        </div>
+    </footer>
+    
+    
+   
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>
