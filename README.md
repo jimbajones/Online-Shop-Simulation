@@ -34,7 +34,7 @@ Given the complexity of this project for a beginner, templates, samples and tuto
 **Instructions to run the code**
 
 1.	Download the files/folder (click on ‘code’ drop down menu and then download zip)
-2.	Open the downloaded folder (Online-Shop-Simulation)
+2.	Open the downloaded folder (Online-Shop-Simulation-main)
 3.	Double Click on the file index.HTML to open it in browser 
 4.	Navigate the online shop (Description/Walkthrough below)
 
