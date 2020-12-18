@@ -1,6 +1,6 @@
 # Project-shopping-cart
-Group project ID: 2282.
-Username: 404_Username_Not_Found
+- Group project ID: 2282 
+- Username: 404_Username_Not_Found
 <p></p>
 <p></p>
 <h1>Online shop Simulation</h1>
@@ -9,14 +9,14 @@ Username: 404_Username_Not_Found
 <p></p>
 <p></p>
 
-**About**
+**About** 
 This is a project for the course “Introduction to programming” of the university of St Gallen.
 
 The goal for this project was to create an online shop experience with a home page for item selection, a shopping cart and a payment (Credit Card Verification) option. This project started as JavaScript only but quickly became an HTML and CSS one as well in order to customize the aesthetics and features. 
 
 Given the complexity of this project for a beginner, templates, samples and tutorials for the required coding were used as a framework, which were then modified, integrated and expanded upon to fit the needs of my specific code, ideas and project as a whole. (All sources are linked at the bottom)
 
-**Pre-requisites**
+**Pre-requisites** 
 - Downloading the main folder (with the files) as it runs on local storage in the web browser. 
 
 **Files**
