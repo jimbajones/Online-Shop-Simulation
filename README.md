@@ -3,7 +3,7 @@
 - Username: 404_Username_Not_Found
 <p></p>
 <p></p>
-<h3>Online shop Simulation</h3>
+<h3>Online Shop Simulation</h3>
 <p></p>
 <h3>With shopping cart and credit card validation using JavaScript, (CSS and HTML for the layout and design component)</h3>
 <p></p>
